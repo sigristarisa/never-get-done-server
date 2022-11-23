@@ -9,13 +9,11 @@ export class User {
   }
 
   static async createUser(user: string) {
-    console.log("user", user);
     const createdUser: UserType = await dbClient.user.create({
       data: {
         name: user,
       },
     });
-    console.log("in model", createdUser);
     return createdUser;
   }
 

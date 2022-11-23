@@ -2,6 +2,10 @@ export type UserType = {
   name: string;
 };
 
+export type TodoType = {
+  task: string;
+};
+
 export type StatusMessage = {
   [key: number]: string;
   200: string;
